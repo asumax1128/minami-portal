@@ -3,3 +3,54 @@
 @media(max-width:1050px){.edition{display:none}.celestial{right:-90px;opacity:.65}.hero h1{font-size:48px}.game-grid{grid-template-columns:repeat(2,1fr)}.card-body{padding:20px}.about-coordinate{display:none}.detail-main aside{padding:25px}footer{flex-wrap:wrap}}
 @media(max-width:650px){header{height:87px;padding:0 6%;gap:15px}.brand{font-size:10px;gap:8px}.brand-icon{font-size:29px}nav{gap:15px;font-size:8px}.hero{min-height:650px}.hero-inner{padding-top:57px}.hero .eyebrow{font-size:7px;letter-spacing:.12em}.hero h1{font-size:clamp(28px,7.5vw,45px);line-height:1.7;letter-spacing:.025em}.catch{font-size:17px;margin-top:22px}.hero-desc{font-size:11px}.celestial{width:310px;height:310px;right:-135px;top:270px;opacity:.3}.planet{width:190px;height:190px}.ring{width:320px;height:130px}.r2{width:360px;height:170px}.hero-bottom{font-size:6px;letter-spacing:.12em;margin-top:58px;gap:20px}.section{padding:50px 6%}.section-heading{align-items:start;gap:20px;flex-direction:column;margin-bottom:25px}h2{font-size:23px}.section-note{font-size:10px}.game-grid{grid-template-columns:1fr;gap:24px}.art{aspect-ratio:1.85}.game-card h3{font-size:24px}.game-card p{font-size:12px}.card-meta{font-size:9px}.actions .button{padding:10px 14px;font-size:11px}.actions .button span{font-size:9px}.detail{font-size:11px}.notice{font-size:9px}.news-section{padding-top:10px}.news-item{grid-template-columns:90px 1fr;gap:12px}.news-item>div{grid-column:1/-1}.news-item h3{font-size:12px}.about{gap:20px}.about-star{font-size:45px}.about h2{font-size:17px}.about p:not(.eyebrow){font-size:10px}.about .eyebrow{font-size:8px}footer{gap:17px;padding-top:28px;padding-bottom:28px}footer p{font-size:8px}footer small{width:100%;margin:0;font-size:7px;display:flex;justify-content:space-between}footer small span{display:inline}.game-detail h1{font-size:32px}.detail-main{grid-template-columns:1fr}.detail-main .art{min-height:230px}.detail-main aside{padding:25px}.info-grid{grid-template-columns:1fr;gap:30px;margin:40px 0}.screenshot-grid{grid-template-columns:1fr;gap:15px}.detail-bottom{align-items:start;flex-direction:column;gap:20px}.mobile{display:block}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;transform:none!important}}
+
+/* Ver.0.2 — Tropical Midnight. Home-only scene; detail layouts stay intact. */
+.home{background-color:#080f1f}
+.home>header{position:absolute;inset:0 0 auto;z-index:5;width:100%;max-width:none;height:100px;background:linear-gradient(#050c1bbb,#050c1b18);border-bottom:1px solid #d8e6ff12}
+.home .hero{height:clamp(660px,94svh,850px);min-height:0;background-color:#09152a;background-image:linear-gradient(90deg,#050e20c9 0%,#07112685 46%,#080e2026 100%),linear-gradient(180deg,#070e2010 40%,#080f1f18 75%,#080f1f 100%),url('./tropical-midnight.webp');background-size:cover;background-position:center center;border-bottom:0}
+.home .hero-inner{height:100%;padding-top:175px;display:flex;flex-direction:column;align-items:flex-start}
+.home .hero .eyebrow{font-size:10px;color:#c6d5ef;text-shadow:0 2px 12px #000;margin-bottom:25px}
+.home .hero h1{font-size:clamp(35px,4.2vw,61px);text-shadow:0 3px 28px #020813cc;line-height:1.55;margin-bottom:22px}
+.home .hero .title-end{white-space:nowrap}
+.home .hero .catch{color:#e6ecf8;text-shadow:0 2px 16px #010816;margin-bottom:16px}
+.home .hero-desc{color:#c5d0e4;text-shadow:0 2px 12px #030a18;margin-bottom:30px}
+.home .hero .primary{min-width:210px;min-height:49px;background:linear-gradient(105deg,#235de9,#4665ed);border:1px solid #7c9bff70;box-shadow:0 5px 27px #274bd544;font-size:12px}
+.home .hero .primary:hover{background:linear-gradient(105deg,#3374fc,#6b67ef)}
+.home .hero-bottom{width:100%;margin-top:auto;padding:30px 0 27px;color:#c2cfe7;text-shadow:0 2px 12px #000;gap:20px}
+.home .celestial,.home .horizon{display:none}
+.home .stars{opacity:.15}
+.home .dot{color:#a89aff}
+.home #games{padding-top:53px}
+.home .section-heading .eyebrow{color:#a4b4d7}
+.menu-toggle,.mobile-nav{display:none}
+[hidden]{display:none!important}
+@media(min-width:1440px){.home>header{padding-inline:max(6%,calc((100vw - 1267px)/2))}}
+@media(max-width:1050px){.home .hero{background-position:58% center}.home .hero h1{font-size:48px}.home .hero-inner{padding-top:165px}}
+@media(max-width:650px){
+ .home>header{height:82px;padding-inline:6%;background:linear-gradient(#050c1baf,#050c1b2e)}
+ .home>header .brand{font-size:11px;line-height:1.7;letter-spacing:.035em;gap:10px}
+ .home>header .brand-icon{font-size:33px;color:#c0d1f6}
+ .home>header>nav:not(.mobile-nav){gap:12px}
+ .menu-ready .home>header>nav:not(.mobile-nav){display:none}
+ .home .menu-toggle:not([hidden]){display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;margin-left:auto;width:46px;height:46px;padding:10px;border:1px solid #a6c0ed38;border-radius:4px;background:#07132780;cursor:pointer}
+ .menu-toggle span{width:23px;height:1.5px;background:#d5e2fa;transition:transform .15s,opacity .15s}
+ .menu-toggle[aria-expanded=true] span:first-child{transform:translateY(6.5px) rotate(45deg)}
+ .menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0}
+ .menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-6.5px) rotate(-45deg)}
+ .home .mobile-nav:not([hidden]){display:flex;position:absolute;top:82px;left:6%;right:6%;margin:0;padding:12px 20px;flex-direction:column;gap:0;border:1px solid #6984bf48;border-radius:5px;background:#0b172bf5;box-shadow:0 20px 40px #02061280;letter-spacing:.04em}
+ .mobile-nav a{display:flex;align-items:center;justify-content:space-between;min-height:54px;font-size:13px;border-bottom:1px solid #b1c7ff16}
+ .mobile-nav a:last-child{border:0}.mobile-nav a span{font-size:9px;letter-spacing:.12em;color:#9aafd6}
+ .home .hero{height:clamp(600px,94svh,740px);background-position:58% center;background-image:linear-gradient(90deg,#050e2094,#07112670 60%,#080e2035),linear-gradient(180deg,#070e2010 35%,#080f1f05 68%,#080f1f 100%),url('./tropical-midnight-mobile.webp')}
+ .home .hero-inner{padding-top:140px}
+ .home .hero .eyebrow{font-size:7px;letter-spacing:.13em;margin-bottom:22px}
+ .home .hero h1{font-size:clamp(27px,7.2vw,44px);letter-spacing:.01em;line-height:1.8;margin-bottom:19px}
+ .home .hero .catch{font-size:18px;letter-spacing:.12em;line-height:1.9;margin:0 0 17px}
+ .home .hero-desc{font-size:11px;line-height:2;margin-bottom:26px}
+ .home .hero .primary{min-width:205px;min-height:47px;font-size:12px}
+ .home .hero-bottom{font-size:7px;letter-spacing:.1em;padding-bottom:24px;line-height:1.7}
+ .home .hero-bottom span:first-child{max-width:135px;color:#d3c2a4}
+ .home .hero-bottom span:last-child{align-self:flex-end}
+ .home #games{padding-top:35px}
+}
+@media(max-width:360px){.home .hero-inner{padding-top:123px}.home .hero .eyebrow{font-size:6.5px}.home .hero .catch{font-size:16px}.home .hero-desc{font-size:10px}.home .hero-bottom{font-size:6px}}
+@media(max-height:600px) and (min-width:651px){.home .hero{height:650px}.home .hero-inner{padding-top:140px}}
