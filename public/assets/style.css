@@ -54,3 +54,58 @@
 }
 @media(max-width:360px){.home .hero-inner{padding-top:123px}.home .hero .eyebrow{font-size:6.5px}.home .hero .catch{font-size:16px}.home .hero-desc{font-size:10px}.home .hero-bottom{font-size:6px}}
 @media(max-height:600px) and (min-width:651px){.home .hero{height:650px}.home .hero-inner{padding-top:140px}}
+
+/* Ver.0.3 — GAME SHOWCASE: original logos and approved game content. */
+.logo-stage{aspect-ratio:1.8;display:flex;align-items:center;justify-content:center;padding:23px;background:radial-gradient(ellipse at 50% 75%,#273a5840,transparent 75%),#0b1526;border-bottom:1px solid #ffffff0c;overflow:hidden}
+.logo-stage-light{background:radial-gradient(ellipse at 50% 38%,#dce5ed 0%,#bacbdc 64%,#91a9c2 100%);border-color:#ffffff20}
+.official-logo{display:block;max-width:100%;width:100%;height:100%;object-fit:contain;filter:none}
+.logo-stage[data-game=kyouen] .official-logo{max-width:100px}
+.game-card{display:flex;flex-direction:column}
+.game-card .logo-stage{flex:none}
+.card-body{display:flex;flex-direction:column;flex:1;padding:23px}
+.card-meta{font-size:10px;line-height:1.7;gap:12px;align-items:start}
+.card-meta>span:first-child{flex-shrink:0;color:#98b3dd;letter-spacing:.12em}
+.card-meta>span:last-child{text-align:right;overflow-wrap:anywhere}
+.game-card h3{font-size:23px;line-height:1.5;margin:16px 0 9px;overflow-wrap:anywhere}
+.game-card .game-catch{font-size:15px;line-height:1.85;font-weight:600;color:#e5eafa;margin:0 0 13px;letter-spacing:.025em}
+.game-card .game-summary{font-size:13px;line-height:2;color:#b8c4d9;margin:0 0 25px}
+.game-card .actions{margin-top:auto;min-height:66px;gap:16px}
+.game-card .actions .button{min-height:44px;min-width:104px;padding:10px 14px;font-size:12px}
+.game-card .actions .button span{font-size:13px}
+.game-card .detail{font-size:12px;padding-block:10px}
+.detail-main .logo-stage{aspect-ratio:auto;min-height:300px;padding:38px}
+.detail-main .official-logo{height:auto;max-height:280px}
+.detail-main .logo-stage[data-game=kyouen] .official-logo{max-width:150px;max-height:260px}
+.game-detail .detail-intro{font-size:19px;line-height:1.8;color:#d4ddf1}
+.game-detail .info-grid{grid-template-columns:1fr 1fr;gap:38px 45px}
+.game-detail .info-grid>section:first-child,.game-detail .info-grid>section:last-child{grid-column:1/-1}
+.game-detail .info-grid p:not(.eyebrow),.game-detail .info-grid li{font-size:15px;line-height:2.1;color:#bdc8db}
+.game-detail .info-grid li+li{margin-top:12px}
+.game-detail .info-grid ol{padding-left:1.5em;margin:0}
+.game-detail .info-grid h2{margin-bottom:17px}
+.game-detail .detail-main aside p{font-size:13px;line-height:2}
+.game-detail .detail-main aside .small{font-size:11px}
+.game-detail .detail-main .play{min-height:47px;min-width:160px;font-size:13px}
+.screenshot-empty span{font-size:13px}
+@media(max-width:1050px){.game-detail .detail-main{grid-template-columns:1.4fr 1fr}.logo-stage{padding:25px}}
+@media(max-width:650px){
+ .logo-stage{aspect-ratio:1.85;padding:23px 26px}
+ .logo-stage[data-game=kyouen] .official-logo{max-width:94px}
+ .card-body{padding:23px}
+ .card-meta{font-size:11px;line-height:1.75}
+ .game-card h3{font-size:25px;margin-top:16px}
+ .game-card .game-catch{font-size:16px;line-height:1.85}
+ .game-card .game-summary{font-size:14px;line-height:2}
+ .game-card .detail{font-size:13px}
+ .game-card .actions .button{font-size:13px;min-width:119px;min-height:46px}
+ .game-detail .detail-intro{font-size:18px}
+ .game-detail .detail-main{grid-template-columns:1fr}
+ .game-detail .detail-main .logo-stage{min-height:215px;padding:27px}
+ .game-detail .detail-main .official-logo{max-height:180px}
+ .game-detail .detail-main .logo-stage[data-game=kyouen] .official-logo{max-width:110px;max-height:180px}
+ .game-detail .info-grid{grid-template-columns:1fr;gap:32px}
+ .game-detail .info-grid p:not(.eyebrow),.game-detail .info-grid li{font-size:14px;line-height:2.1}
+}
+/* Let long genre names use the full card width. */
+.card-meta{flex-direction:column;gap:5px}
+.card-meta>span:last-child{text-align:left}

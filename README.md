@@ -1,4 +1,4 @@
-# 南の国からどげんかせんといかん Ver.0.1
+# 南の国からどげんかせんといかん Ver.0.3
 
 個人開発Webゲーム5作品の公式ポータル。既存ゲームのコードや公開先は変更しません。
 
@@ -27,6 +27,9 @@ Node.js 22以上とPython 3を使用します。外部パッケージのイン�
 | id | URLに使う半角英数字とハイフン。既存作品では変更しない |
 | title | 正式タイトル |
 | description | 一覧用の短い紹介 |
+| catchphrase | 正式キャッチコピー |
+| logoWidth / logoHeight | ロゴ原本の幅・高さ |
+| logoTone | 暗いロゴはlight、明るいロゴはdarkの台紙を指定 |
 | genre | 正式ジャンル（現在は未登録） |
 | url | 正式な外部ゲームURL。未登録はnull。http/https以外は無効 |
 | image | メイン画像。例：assets/factor-main.webp。未登録はnull |
@@ -39,7 +42,7 @@ Node.js 22以上とPython 3を使用します。外部パッケージのイン�
 
 画像パスは `assets/` から始めます。正式な画像は縦横比16:9前後を推奨します。情報を追加した後は再ビルドします。新作はgames.jsonに同じ形式の項目を追加するだけで一覧・詳細ページが生成されます。
 
-仮画像は装飾用の図形で、実際のゲーム画面・正式ロゴではありません。未確認のルールやジャンルは記載していません。
+ロゴは既存ゲームの原本PNGを改変せず使用しています。Tropical Midnight背景はVer.0.2を維持しています。EV×auctionの詳細URLは既存リンク保護のため games/ex-auction/ を維持しています。
 
 ## GitHub Pagesで公開
 
@@ -53,4 +56,18 @@ Node.js 22以上とPython 3を使用します。外部パッケージのイン�
 
 ## 現状
 
-トップ＋5詳細ページ、正式PLAYリンク、レスポンシブCSS、公開設定を実装済み。正式紹介文・ジャンル・ロゴ・スクリーンショットは未登録です。公開先リポジトリは未作成です。
+トップ＋5詳細ページ、正式PLAYリンク、レスポンシブCSS、公開設定を実装済み。正式紹介文・ジャンル・キャッチコピー・ロゴ・特徴・遊び方を登録済みです。スクリーンショットは未登録です。公開先：https://asumax1128.github.io/minami-portal/
+
+## Ver.0.3 正式ロゴの出典
+
+すべて目視確認し、原本のバイト列を変更せずコピーしています。色・形・縦横比は画像内で変更していません。青みのあるシルバーグレーの台紙はCSSの指定です。
+
+| 登録ファイル（public/assets/logos/） | 元リポジトリ・パス | 元コミット |
+| --- | --- | --- |
+| factor-factor.png | asumax1128/factorfactor：ui-next/logo-official.png | dd9a7dc5d617e3199da32d31091e518fcb95f679 |
+| kyouen.png | asumax1128/kyoen：title.png | 07df99910e129c8557593b3da5fd44588e1806b4 |
+| proof-bluff.png | asumax1128/proof-bluff：title.png | acd3aa6d3ca1fc723d940c1ffc4a2336f568a305 |
+| ev-auction.png | asumax1128/evauction：title.png | 637f3104f3e29960bd6b9f5135f27291d733fdcc |
+| read-crowd.png | asumax1128/crowd-reader：title.png | 8fc44ecb5605dbb1b0d9a6c2897542a68a3cc30a |
+
+ロゴは遅延読み込みし、原本の表示比率をCSSのobject-fit: containで維持しています。公開ゲームサイトへの接続制限により現在版のスクリーンショットを取得できなかったため、screenshotsは空配列のままです。架空のゲーム画面は使用していません。

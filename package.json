@@ -1,1 +1,13 @@
-{"name":"minami-game-portal","version":"0.1.0","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","dev":"npm run build && python3 -m http.server 4173 --directory dist"},"engines":{"node":">=22"}}
+{
+  "name": "minami-game-portal",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && python3 -m http.server 4173 --directory dist"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
