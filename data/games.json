@@ -25,7 +25,8 @@
     "logoWidth": 1774,
     "logoHeight": 887,
     "logoTone": "dark",
-    "beginnerTip": "ソロのイージーで、2枚のタイルをドラッグする操作から。"
+    "beginnerTip": "ソロのイージーで、2枚のタイルをドラッグする操作から。",
+    "logoWebp": "assets/logos/factor-factor.webp"
   },
   {
     "id": "kyouen",
@@ -112,7 +113,8 @@
     "logoWidth": 960,
     "logoHeight": 480,
     "logoTone": "dark",
-    "beginnerTip": "CPUとの紙入札で、ヒントの期待値と抽選結果を比べよう。"
+    "beginnerTip": "CPUとの紙入札で、ヒントの期待値と抽選結果を比べよう。",
+    "logoWebp": "assets/logos/ev-auction.webp"
   },
   {
     "id": "read-crowd",

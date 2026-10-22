@@ -1,4 +1,4 @@
-# 南の国からどげんかせんといかん Ver.0.4
+# 南の国からどげんかせんといかん Ver.0.5
 
 個人開発Webゲーム5作品の公式ポータル。既存ゲームのコードや公開先は変更しません。
 
@@ -29,6 +29,7 @@ Node.js 22以上とPython 3を使用します。外部パッケージのイン�
 | description | 一覧用の短い紹介 |
 | beginnerTip | 初心者向け案内。省略・null・空文字・空白のみの場合は欄を非表示 |
 | catchphrase | 正式キャッチコピー |
+| logoWebp | 任意の表示用WebP。未登録ならlogoの原本PNGを表示 |
 | logoWidth / logoHeight | ロゴ原本の幅・高さ |
 | logoTone | 暗いロゴはlight、明るいロゴはdarkの台紙を指定 |
 | genre | 正式ジャンル（現在は未登録） |
@@ -76,3 +77,14 @@ Node.js 22以上とPython 3を使用します。外部パッケージのイン�
 ## Ver.0.4 PLAY EXPERIENCE
 
 ゲーム情報のaccentをカード上端・作品番号・見出し横の線・PLAYの枠と淡い光へ反映。正式ロゴ・背景・PLAY URL・詳細URL・自動公開設定は維持しています。スマホのPLAYと詳細は48px以上の操作領域、間隔12px以上を確保。詳細はPLAYをロゴより先に配置し、特徴は箇条書き、遊び方は番号付きです。追従式PLAYはありません。スクリーンショット未登録時は短い案内だけを表示します。
+
+## Ver.0.5 FINAL POLISH
+
+FACTOR×FACTORとEV×auctionのみ、同寸法・RGBA完全一致のロスレスWebPを表示用に追加。原本PNGへの参照はlogoに保持し、pictureでWebP対応時にlogoWebpを選択します。非対応時はPNG、logoWebp未登録の作品も従来のPNGです。取得失敗時の代替テキストとPLAY導線を維持し、追加JavaScriptは使用していません。
+
+| 作品 | PNG | WebP | 削減率 |
+| --- | ---: | ---: | ---: |
+| FACTOR×FACTOR | 2,373,722 bytes | 1,671,656 bytes | 29.58% |
+| EV×auction | 442,039 bytes | 325,310 bytes | 26.41% |
+
+双方とも復号後RGBAの差分は0画素（完全透明部分を含む）。原本の色・透明部分・輪郭・寸法は変更していません。ビルド時は登録ロゴ／logoWebpのファイル存在と、登録ロゴの正の寸法を検査します。ロゴ未登録は許容します。
