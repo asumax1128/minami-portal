@@ -2,7 +2,7 @@
   {
     "id": "factor-factor",
     "title": "FACTOR×FACTOR",
-    "accent": "#68aaff",
+    "accent": "#60C9F5",
     "symbol": "×",
     "description": "式に合う因数タイルをつなぎ、次々と問題を攻略！ HPやコンボを駆使するソロプレイから、スピードと正確さを競う対戦まで楽しめる因数分解ゲーム。",
     "genre": "因数分解アクション／数学対戦",
@@ -24,12 +24,13 @@
     "catchphrase": "因数をつなげ。速さと知略で頂点へ。",
     "logoWidth": 1774,
     "logoHeight": 887,
-    "logoTone": "dark"
+    "logoTone": "dark",
+    "beginnerTip": "ソロのイージーで、2枚のタイルをドラッグする操作から。"
   },
   {
     "id": "kyouen",
     "title": "共円",
-    "accent": "#b8a0ff",
+    "accent": "#B4BEDC",
     "symbol": "◎",
     "description": "盤面に隠れた円を見つけ出せ！ 格子点に石を置き、同じ円周上や一直線上に並ぶ4点を見抜く図形ゲーム。CPU戦や友人との対戦、問題モードも楽しめます。",
     "genre": "幾何学対戦／図形パズル",
@@ -52,12 +53,13 @@
     "catchphrase": "見えない円を、見抜け。",
     "logoWidth": 342,
     "logoHeight": 560,
-    "logoTone": "light"
+    "logoTone": "light",
+    "beginnerTip": "問題モードで、同じ円周上や一直線上の4点を探す練習から。"
   },
   {
     "id": "proof-bluff",
     "title": "Proof×BLUFF",
-    "accent": "#7ce0d7",
+    "accent": "#FF827B",
     "symbol": "◇",
     "description": "命題カードを組み合わせ、相手の秘密の数を推理せよ！ 「かつ」「または」の論理に、嘘やぼかし、ダウトの駆け引きが絡み合う心理戦ゲーム。",
     "genre": "論理推理／ブラフ",
@@ -80,12 +82,13 @@
     "catchphrase": "論理で追い詰めろ。嘘を見破れ。",
     "logoWidth": 900,
     "logoHeight": 506,
-    "logoTone": "dark"
+    "logoTone": "dark",
+    "beginnerTip": "CPU戦のイージー・嘘なし設定で、質問による絞り込みから。"
   },
   {
     "id": "ex-auction",
     "title": "EV×auction",
-    "accent": "#d4a2f2",
+    "accent": "#E2BC6C",
     "symbol": "↗",
     "description": "そのくじに、いくら払う？ 確率と賞金から期待値を考え、入札で競い合うオークションゲーム。紙入札とせり上げ式、2つの方式で判断力と駆け引きが試されます。",
     "genre": "期待値オークション／確率・駆け引き",
@@ -108,12 +111,13 @@
     "catchphrase": "その価値を見抜け。勝負は入札前から。",
     "logoWidth": 960,
     "logoHeight": 480,
-    "logoTone": "dark"
+    "logoTone": "dark",
+    "beginnerTip": "CPUとの紙入札で、ヒントの期待値と抽選結果を比べよう。"
   },
   {
     "id": "read-crowd",
     "title": "READ×CROWD",
-    "accent": "#89b6f2",
+    "accent": "#A6BFD6",
     "symbol": "≋",
     "description": "みんなが選ぶ数字を予測せよ！ 平均値や中央値などの統計的な基準を読み、最適な一手を探る数値予測ゲーム。数字の裏に隠れた群衆の心理を見抜こう。",
     "genre": "データ分析／数値予測・駆け引き",
@@ -136,6 +140,7 @@
     "catchphrase": "群衆を読め。その一手が未来を変える。",
     "logoWidth": 900,
     "logoHeight": 494,
-    "logoTone": "light"
+    "logoTone": "light",
+    "beginnerTip": "CPUとの練習で、予想と結果のグラフを見比べよう。"
   }
 ]
