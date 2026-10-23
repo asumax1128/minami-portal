@@ -1,0 +1,22 @@
+[
+  {
+    "id": "speed",
+    "name": "スピード勝負",
+    "description": "速さと正確さで挑む"
+  },
+  {
+    "id": "logic",
+    "name": "じっくり頭脳戦",
+    "description": "観察と論理で解く"
+  },
+  {
+    "id": "mind",
+    "name": "読み合い・心理戦",
+    "description": "相手の考えを見抜く"
+  },
+  {
+    "id": "strategy",
+    "name": "数字で戦略勝負",
+    "description": "確率と予測を武器に"
+  }
+]

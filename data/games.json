@@ -48,7 +48,14 @@
     "logoHeight": 887,
     "logoTone": "dark",
     "beginnerTip": "ソロのイージーで、2枚のタイルをドラッグする操作から。",
-    "logoWebp": "assets/logos/factor-factor.webp"
+    "logoWebp": "assets/logos/factor-factor.webp",
+    "categories": [
+      "speed"
+    ],
+    "tags": [
+      "因数分解",
+      "スピード"
+    ]
   },
   {
     "id": "kyouen",
@@ -99,7 +106,14 @@
     "logoWidth": 342,
     "logoHeight": 560,
     "logoTone": "light",
-    "beginnerTip": "問題モードで、同じ円周上や一直線上の4点を探す練習から。"
+    "beginnerTip": "問題モードで、同じ円周上や一直線上の4点を探す練習から。",
+    "categories": [
+      "logic"
+    ],
+    "tags": [
+      "図形",
+      "発見"
+    ]
   },
   {
     "id": "proof-bluff",
@@ -150,7 +164,15 @@
     "logoWidth": 900,
     "logoHeight": 506,
     "logoTone": "dark",
-    "beginnerTip": "CPU戦のイージー・嘘なし設定で、質問による絞り込みから。"
+    "beginnerTip": "CPU戦のイージー・嘘なし設定で、質問による絞り込みから。",
+    "categories": [
+      "logic",
+      "mind"
+    ],
+    "tags": [
+      "論理",
+      "心理戦"
+    ]
   },
   {
     "id": "ex-auction",
@@ -202,7 +224,14 @@
     "logoHeight": 480,
     "logoTone": "dark",
     "beginnerTip": "CPUとの紙入札で、ヒントの期待値と抽選結果を比べよう。",
-    "logoWebp": "assets/logos/ev-auction.webp"
+    "logoWebp": "assets/logos/ev-auction.webp",
+    "categories": [
+      "strategy"
+    ],
+    "tags": [
+      "期待値",
+      "戦略"
+    ]
   },
   {
     "id": "read-crowd",
@@ -253,6 +282,14 @@
     "logoWidth": 900,
     "logoHeight": 494,
     "logoTone": "light",
-    "beginnerTip": "CPUとの練習で、予想と結果のグラフを見比べよう。"
+    "beginnerTip": "CPUとの練習で、予想と結果のグラフを見比べよう。",
+    "categories": [
+      "mind",
+      "strategy"
+    ],
+    "tags": [
+      "予測",
+      "読み合い"
+    ]
   }
 ]

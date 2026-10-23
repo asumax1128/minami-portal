@@ -198,3 +198,27 @@ body:not(.home)>header{height:auto;min-height:108px;flex-wrap:wrap;row-gap:12px;
 .gallery-controls button:active{background:#293c59}
 @media(hover:hover) and (pointer:fine){.gallery-controls button:not([aria-disabled=true]):hover{background:#1e304c;border-color:#a5bce1}}
 @media(max-width:650px){.gallery-image{padding:6px;height:clamp(280px,62svh,560px)}.gallery-slide figcaption{font-size:14px;padding:15px;min-height:5.8em}.gallery-help{font-size:12px}}
+
+/* Ver.0.7 — GAME DISCOVERY. Existing cards and PLAY controls are reused. */
+.game-discovery{margin:0 0 30px;padding:26px;border:1px solid #30435f;border-radius:6px;background:#101c30}
+.game-discovery h3{margin:0 0 12px;font-size:clamp(20px,2.4vw,26px);line-height:1.7;color:#edf3ff}
+.game-discovery .eyebrow{margin-bottom:12px}
+.discovery-description{font-size:14px;line-height:1.9;color:#b8c4d9;margin:0 0 20px}
+.discovery-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.discovery-option{min-height:84px;min-width:0;padding:14px 12px;border:1px solid #4b5f80;border-radius:5px;background:#101a2c;color:#dce5f7;text-align:left;font:inherit;cursor:pointer;overflow-wrap:anywhere}
+.category-name,.category-description{display:block}
+.category-name{font-size:15px;font-weight:700;line-height:1.7}
+.category-description{font-size:12px;line-height:1.8;color:#aebed6;margin-top:4px}
+.discovery-option[aria-pressed=true]{border-color:#a4bcff;background:#223558;box-shadow:inset 0 0 0 1px #a4bcff}
+.discovery-status{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:16px}
+.discovery-reset{min-height:48px;padding:10px 18px;border:1px solid #5d7193;border-radius:4px;background:#101a2c;color:#dce5f7;font:inherit;font-size:14px;cursor:pointer}
+.discovery-reset[aria-pressed=true]{border-color:#a4bcff;background:#223558}
+.discovery-count{font-size:14px;color:#bdc8db;line-height:1.9;margin:0}
+.discovery-option:focus-visible,.discovery-reset:focus-visible{outline:2px solid #bdd7ff;outline-offset:4px}
+.discovery-option:active,.discovery-reset:active{background:#293c59}
+.discovery-controls[hidden],.game-card[hidden]{display:none}
+.game-card .game-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 22px;padding:0;list-style:none}
+.game-tags li{font-size:12px;line-height:1.7;color:#b8c4d9;padding:3px 9px;border:1px solid #35455f;border-radius:20px;background:#101c30}
+@media(hover:hover) and (pointer:fine){.discovery-option:hover,.discovery-reset:hover{border-color:#a5bce1;background:#1e304c}}
+@media(max-width:900px){.discovery-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.game-discovery{padding:18px}.discovery-options{gap:12px}.discovery-option{padding:12px 9px;min-height:96px}.category-name{font-size:14px}.category-description{font-size:12px}.discovery-description{font-size:14px}.discovery-count{font-size:13px}}
