@@ -20,7 +20,29 @@
       "掛け合わせると出題式になる2枚のタイルをドラッグでつなぎます。別々に2回タップする方式ではありません。",
       "通常ソロは1問20秒。HPを保ちながら規定の正解数を目指します。イージーは15正解でクリアです。"
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/factorfactor/IMG_0437.webp",
+        "original": "assets/screenshots/factorfactor/IMG_0437.jpg",
+        "width": 1200,
+        "height": 2121,
+        "caption": "2枚の因数タイルをつなげて、素早く因数分解！"
+      },
+      {
+        "src": "assets/screenshots/factorfactor/IMG_0438.webp",
+        "original": "assets/screenshots/factorfactor/IMG_0438.jpg",
+        "width": 1200,
+        "height": 2126,
+        "caption": "因数分解の速さと正確さで、CPUに挑戦！"
+      },
+      {
+        "src": "assets/screenshots/factorfactor/IMG_0439.webp",
+        "original": "assets/screenshots/factorfactor/IMG_0439.jpg",
+        "width": 1200,
+        "height": 1708,
+        "caption": "多彩なゲームモードで、楽しみながら実力アップ！"
+      }
+    ],
     "catchphrase": "因数をつなげ。速さと知略で頂点へ。",
     "logoWidth": 1774,
     "logoHeight": 887,
@@ -50,7 +72,29 @@
       "南稜ローカルルールでは盤上のどの4点でも指摘でき、正しければ指摘者の勝ち、誤指摘なら指摘者が脱落します。直前に置いた本人は、その手を指摘できません。",
       "初めてなら、問題モードで4点を探す練習から始められます。"
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/kyoen/IMG_0442.webp",
+        "original": "assets/screenshots/kyoen/IMG_0442.jpg",
+        "width": 1200,
+        "height": 2112,
+        "caption": "盤面に隠れた、同じ円周上の4点を見抜こう。"
+      },
+      {
+        "src": "assets/screenshots/kyoen/IMG_0441.webp",
+        "original": "assets/screenshots/kyoen/IMG_0441.jpg",
+        "width": 1200,
+        "height": 2190,
+        "caption": "共円を作らない一手を、じっくり考えよう。"
+      },
+      {
+        "src": "assets/screenshots/kyoen/IMG_0440.webp",
+        "original": "assets/screenshots/kyoen/IMG_0440.jpg",
+        "width": 1200,
+        "height": 2136,
+        "caption": "円を作らずに石を置く、数学的な駆け引き。"
+      }
+    ],
     "catchphrase": "見えない円を、見抜け。",
     "logoWidth": 342,
     "logoHeight": 560,
@@ -79,7 +123,29 @@
       "嘘あり設定では1回の嘘を使えます。ぼかしは真実ですが情報の弱い回答で、回数に制限があります。",
       "1回だけの尋問には嘘もぼかしも使えません。ダウト成功ならもう一度行動、失敗や数の宣言を外した場合は1回休みです。"
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/proof-bluff/IMG_0443.webp",
+        "original": "assets/screenshots/proof-bluff/IMG_0443.jpg",
+        "width": 1200,
+        "height": 2041,
+        "caption": "命題を組み合わせて質問し、相手の数字に迫れ。"
+      },
+      {
+        "src": "assets/screenshots/proof-bluff/IMG_0444.webp",
+        "original": "assets/screenshots/proof-bluff/IMG_0444.jpg",
+        "width": 1200,
+        "height": 2154,
+        "caption": "その答えは真実か、それともブラフか。"
+      },
+      {
+        "src": "assets/screenshots/proof-bluff/IMG_0445.webp",
+        "original": "assets/screenshots/proof-bluff/IMG_0445.jpg",
+        "width": 1200,
+        "height": 1588,
+        "caption": "答えを分析し、論理で候補を絞り込もう。"
+      }
+    ],
     "catchphrase": "論理で追い詰めろ。嘘を見破れ。",
     "logoWidth": 900,
     "logoHeight": 506,
@@ -108,7 +174,29 @@
       "せり上げ式では価格の上昇を見て降りるか残るかを判断。通常は残りがおよそ2割になった時点で落札です。",
       "落札者は共通の抽選結果による賞金を受け取ります。期待値より安く落札しても、1回の抽選で利益が出るとは限りません。"
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/ev-auction/IMG_0446.webp",
+        "original": "assets/screenshots/ev-auction/IMG_0446.jpg",
+        "width": 1200,
+        "height": 2136,
+        "caption": "確率と期待値を読み、勝負の入札額を決めろ。"
+      },
+      {
+        "src": "assets/screenshots/ev-auction/IMG_0447.webp",
+        "original": "assets/screenshots/ev-auction/IMG_0447.jpg",
+        "width": 1200,
+        "height": 2134,
+        "caption": "ライバルとの競り合い。落札するのは誰だ？"
+      },
+      {
+        "src": "assets/screenshots/ev-auction/IMG_0448.webp",
+        "original": "assets/screenshots/ev-auction/IMG_0448.jpg",
+        "width": 1200,
+        "height": 2316,
+        "caption": "結果を振り返り、次の勝負に生かそう。"
+      }
+    ],
     "catchphrase": "その価値を見抜け。勝負は入札前から。",
     "logoWidth": 960,
     "logoHeight": 480,
@@ -138,7 +226,29 @@
       "中央値に近いほど上位になる回や、平均値から遠いほど上位になる回などがあります。全5ラウンドの合計得点を競いましょう。",
       "自分の最初の数字、自分の過去の提出数、過去の1位の数は使えません。最頻値を使う回では、複数の最頻値があるときはその平均を使う独自ルールです。"
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/read-crowd/IMG_0449.webp",
+        "original": "assets/screenshots/read-crowd/IMG_0449.jpg",
+        "width": 1200,
+        "height": 2097,
+        "caption": "群衆の数字を読み、勝負の一手を決めよう。"
+      },
+      {
+        "src": "assets/screenshots/read-crowd/IMG_0450.webp",
+        "original": "assets/screenshots/read-crowd/IMG_0450.jpg",
+        "width": 1200,
+        "height": 1894,
+        "caption": "平均値や分布を読み解き、結果を分析！"
+      },
+      {
+        "src": "assets/screenshots/read-crowd/IMG_0451.webp",
+        "original": "assets/screenshots/read-crowd/IMG_0451.jpg",
+        "width": 1200,
+        "height": 2214,
+        "caption": "30人のライバルを相手に、頂点を目指せ。"
+      }
+    ],
     "catchphrase": "群衆を読め。その一手が未来を変える。",
     "logoWidth": 900,
     "logoHeight": 494,
