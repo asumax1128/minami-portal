@@ -113,6 +113,6 @@ FACTOR×FACTORとEV×auctionのみ、同寸法・RGBA完全一致のロスレス
 
 6作品目HIGH×LOWを登録。正式ロゴ、実ゲーム画面3枚、詳細ページ、PLAYリンク、GAME DISCOVERY（スピード勝負）を追加。掲載素材と文章は `asumax1128/highlow/docs/PORTAL-HANDOFF.md` に基づき、元のPNGを保持。既存5作品と各ゲーム本体は変更しません。
 
-## 数雀追加（7作品目・準備中）
+## Ver.0.9 数雀追加（7作品目）
 
 7作品目「数雀」を登録。正式ロゴは `asumax1128/mathjong` の `src/ui/title-logo-1536.png`（1536×1024・透明PNG・SHA-256 `aee4ed67…7ca1f`）をバイト単位で同一のまま `assets/logos/mathjong.png` に置き、表示用に画素が同一の可逆WebP（`mathjong.webp`）を追加。ゲーム画面3枚（タイトル・対局・牌譜の振り返り）は実際の画面で、元画像を保持し表示用に幅1200pxのWebPを追加。カテゴリは数字で戦略勝負・じっくり頭脳戦。戦績の集計は数雀側で未実装のため紹介していません。既存6作品と数雀本体は変更しません。
