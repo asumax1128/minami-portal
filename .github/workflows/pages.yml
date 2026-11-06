@@ -39,3 +39,21 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify live Pages content with curl
+        run: |
+          set -eu
+          url="https://asumax1128.github.io/minami-portal/"
+          for attempt in 1 2 3 4 5 6; do
+            curl -fsSL --retry 2 --max-time 20 -H 'Cache-Control: no-cache' "${url}?verify=${GITHUB_SHA}" -o /tmp/minami-live.html
+            if grep -q 'GAME 08' /tmp/minami-live.html &&
+               grep -q 'EIGHT GAMES' /tmp/minami-live.html &&
+               grep -q 'https://asumax1128.github.io/tenpop/' /tmp/minami-live.html; then
+              echo "LIVE OK: GAME 08, EIGHT GAMES, and TEN POP PLAY URL"
+              wc -c /tmp/minami-live.html
+              exit 0
+            fi
+            echo "Live Pages is not updated yet (attempt ${attempt}/6)"
+            sleep 10
+          done
+          echo "ERROR: deployed Pages content is missing required TEN POP markers"
+          exit 1
