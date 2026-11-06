@@ -414,5 +414,65 @@
       "戦略",
       "牌譜"
     ]
+  },
+  {
+    "id": "tenpop",
+    "title": "TEN POP",
+    "accent": "#FF5D8F",
+    "symbol": "10",
+    "description": "タイルを指でなぞって、合計がちょうど10になったらポップ！ 連鎖とビッグポップ、フィーバーを駆使して60秒でハイスコアを狙う数字パズル。ランキング対応。",
+    "genre": "合計10パズル／60秒スコアアタック",
+    "image": null,
+    "logo": "assets/logos/tenpop-logo.png",
+    "logoWebp": "assets/logos/tenpop-logo.webp",
+    "logoWidth": 915,
+    "logoHeight": 417,
+    "logoTone": "dark",
+    "url": "https://asumax1128.github.io/tenpop/",
+    "catchphrase": "なぞって10をつくろう！",
+    "overview": "数字のタイルを指でなぞり、合計がちょうど10になった瞬間に消す数字パズルです。制限時間は60秒。落下したタイルから生まれる連鎖や、同じ大きい数字をそろえるビッグポップで得点を伸ばします。消すたびにゲージがたまり、満タンになるとフィーバーが自動発動。ランキングにも対応しています。",
+    "features": [
+      "合計10になった瞬間に消える、指でなぞる操作。長い道にはロングボーナス。",
+      "落下したタイルが関係する合計10の組で連鎖。同じ6・7・8・9を縦横に4つ以上、または2×2にそろえるとビッグポップ。",
+      "ゲージが満タンになると自動フィーバー。6→4、7→3、8→2、9→1へ変わり、10を作りやすくなります。",
+      "60秒のスコアアタックとランキング。"
+    ],
+    "beginnerTip": "まずは4と6、2と8など、合計10になる短い組を探そう。途中で指を離すとキャンセル、1つ戻ると取り消しができます。",
+    "howToPlay": [
+      "タイトルの「あそびかた」で操作を確認し、ゲームを始めます。",
+      "タイルを指でなぞり、合計10を作ります。10になった瞬間に消え、10を超えるタイルには進めません。",
+      "落下後の連鎖やビッグポップを狙いましょう。フィーバーはゲージが満タンになると自動で発動します。",
+      "60秒でハイスコアを目指し、終了後はランキングを確認・登録できます。"
+    ],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/tenpop/tenpop-howto.webp",
+        "original": "assets/screenshots/tenpop/tenpop-howto.jpeg",
+        "width": 878,
+        "height": 1536,
+        "caption": "指でなぞって合計10！ あそびかたで基本操作を確認。"
+      },
+      {
+        "src": "assets/screenshots/tenpop/tenpop-play.webp",
+        "original": "assets/screenshots/tenpop/tenpop-play.jpeg",
+        "width": 853,
+        "height": 1536,
+        "caption": "60秒でハイスコアを目指す、通常プレイ画面。"
+      },
+      {
+        "src": "assets/screenshots/tenpop/tenpop-combo.webp",
+        "original": "assets/screenshots/tenpop/tenpop-combo.jpeg",
+        "width": 870,
+        "height": 1536,
+        "caption": "タイルの落下から連鎖！ 得点を伸ばそう。"
+      }
+    ],
+    "categories": [
+      "speed"
+    ],
+    "tags": [
+      "合計10",
+      "ランキング"
+    ]
   }
 ]

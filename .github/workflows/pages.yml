@@ -22,15 +22,14 @@ jobs:
         with:
           node-version: '22'
       - run: npm run build
-      # The hand-maintained root index.html contains the latest game cards.
-      # The legacy builder still generates a separate index from data/games.json;
-      # publish the main-branch index instead of silently reverting to it.
-      - name: Publish current main index
+      - name: Verify generated portal
         run: |
-          cp index.html dist/index.html
-          test -s dist/index.html
+          set -eu
+          test "$(find dist -name index.html | wc -l)" -eq "$(node -p 'require("./data/games.json").length + 1')"
+          test -s dist/games/tenpop/index.html
           grep -q 'GAME 08' dist/index.html
           grep -q 'EIGHT GAMES' dist/index.html
+          grep -q './games/tenpop/' dist/index.html
           grep -q 'https://asumax1128.github.io/tenpop/' dist/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -47,9 +46,17 @@ jobs:
             curl -fsSL --retry 2 --max-time 20 -H 'Cache-Control: no-cache' "${url}?verify=${GITHUB_SHA}" -o /tmp/minami-live.html
             if grep -q 'GAME 08' /tmp/minami-live.html &&
                grep -q 'EIGHT GAMES' /tmp/minami-live.html &&
+               grep -q 'TEN POP' /tmp/minami-live.html &&
                grep -q 'https://asumax1128.github.io/tenpop/' /tmp/minami-live.html; then
               echo "LIVE OK: GAME 08, EIGHT GAMES, and TEN POP PLAY URL"
               wc -c /tmp/minami-live.html
+              curl -fsSL --retry 2 --max-time 20 "${url}games/tenpop/?verify=${GITHUB_SHA}" -o /tmp/minami-tenpop.html
+              grep -q 'TEN POP' /tmp/minami-tenpop.html
+              grep -q 'gallery-tenpop' /tmp/minami-tenpop.html
+              for asset in assets/logos/tenpop-logo.png assets/logos/tenpop-logo.webp assets/screenshots/tenpop/tenpop-howto.jpeg assets/screenshots/tenpop/tenpop-howto.webp assets/screenshots/tenpop/tenpop-play.jpeg assets/screenshots/tenpop/tenpop-play.webp assets/screenshots/tenpop/tenpop-combo.jpeg assets/screenshots/tenpop/tenpop-combo.webp; do
+                curl -fsSL --retry 2 --max-time 20 "${url}${asset}?verify=${GITHUB_SHA}" -o /dev/null
+              done
+              echo "LIVE OK: TEN POP detail and all original/display assets"
               exit 0
             fi
             echo "Live Pages is not updated yet (attempt ${attempt}/6)"
