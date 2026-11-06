@@ -22,6 +22,16 @@ jobs:
         with:
           node-version: '22'
       - run: npm run build
+      # The hand-maintained root index.html contains the latest game cards.
+      # The legacy builder still generates a separate index from data/games.json;
+      # publish the main-branch index instead of silently reverting to it.
+      - name: Publish current main index
+        run: |
+          cp index.html dist/index.html
+          test -s dist/index.html
+          grep -q 'GAME 08' dist/index.html
+          grep -q 'EIGHT GAMES' dist/index.html
+          grep -q 'https://asumax1128.github.io/tenpop/' dist/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
