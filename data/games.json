@@ -482,7 +482,7 @@
     "symbol": "分",
     "description": "分数の弾を撃ち分けて、敵の値にちょうど合わせて撃ち抜く縦スクロールシューティング。超えるとバースト！ STAGE 5のボスを倒せばクリア。ランキング対応。",
     "genre": "分数シューティング／ステージ制",
-    "image": "assets/logos/bunshoot-logo.png",
+    "image": null,
     "logo": "assets/logos/bunshoot-logo.png",
     "logoWebp": "assets/logos/bunshoot-logo.webp",
     "logoWidth": 1000,
