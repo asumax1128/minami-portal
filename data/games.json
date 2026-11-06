@@ -482,11 +482,11 @@
     "symbol": "分",
     "description": "分数の弾を撃ち分けて、敵の値にちょうど合わせて撃ち抜く縦スクロールシューティング。超えるとバースト！ STAGE 5のボスを倒せばクリア。ランキング対応。",
     "genre": "分数シューティング／ステージ制",
-    "image": null,
-    "logo": null,
-    "logoWebp": null,
-    "logoWidth": null,
-    "logoHeight": null,
+    "image": "assets/logos/bunshoot-logo.png",
+    "logo": "assets/logos/bunshoot-logo.png",
+    "logoWebp": "assets/logos/bunshoot-logo.webp",
+    "logoWidth": 1000,
+    "logoHeight": 190,
     "logoTone": "dark",
     "url": "https://asumax1128.github.io/bunshoot/",
     "catchphrase": "ちょうどで撃ち抜け！",
@@ -504,7 +504,29 @@
       "敵の値にちょうど合うよう分数を足していきます。超えるとバーストするので順番に注意。",
       "ノルマ撃破でボス出現。層を全部剥がすとステージクリア、STAGE 5のボスでゲームクリアです。"
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/bunshoot/bunshoot-play.webp",
+        "original": "assets/screenshots/bunshoot/bunshoot-play.jpeg",
+        "width": 870,
+        "height": 1536,
+        "caption": "分数を足して、敵の値にちょうど合わせる"
+      },
+      {
+        "src": "assets/screenshots/bunshoot/bunshoot-combo.webp",
+        "original": "assets/screenshots/bunshoot/bunshoot-combo.jpeg",
+        "width": 870,
+        "height": 1536,
+        "caption": "コンボをつなぐと 1/12 弾が解放"
+      },
+      {
+        "src": "assets/screenshots/bunshoot/bunshoot-boss.webp",
+        "original": "assets/screenshots/bunshoot/bunshoot-boss.jpeg",
+        "width": 870,
+        "height": 1536,
+        "caption": "ボスは層をすべてはがして撃破"
+      }
+    ],
     "categories": [
       "speed"
     ],
