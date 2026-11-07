@@ -55,7 +55,9 @@
     "tags": [
       "因数分解",
       "スピード"
-    ]
+    ],
+    "featured": true,
+    "featuredOrder": 1
   },
   {
     "id": "kyouen",
@@ -413,7 +415,9 @@
       "数学麻雀",
       "戦略",
       "牌譜"
-    ]
+    ],
+    "featured": true,
+    "featuredOrder": 2
   },
   {
     "id": "tenpop",
@@ -534,5 +538,66 @@
       "分数",
       "ランキング"
     ]
+  },
+  {
+    "id": "tenpuzzle",
+    "title": "テンパズル",
+    "url": "https://asumax1128.github.io/tenpuzzle/",
+    "genre": "数字パズル／コレクション",
+    "catchphrase": "4つの数で 10 をつくろう",
+    "accent": "#C8892B",
+    "symbol": "10",
+    "tags": [
+      "数字パズル",
+      "ランキング"
+    ],
+    "categories": [
+      "logic"
+    ],
+    "image": null,
+    "logo": "assets/logos/tenpuzzle-logo.jpg",
+    "logoWebp": "assets/logos/tenpuzzle-logo.webp",
+    "logoWidth": 1206,
+    "logoHeight": 402,
+    "logoTone": "dark",
+    "description": "4つの数字と四則演算で10を作る数字パズル。見つけた解法を図鑑に集め、いろいろな解き方を探そう。ランキング対応。",
+    "overview": "数字のカードを2枚選び、足す・引く・掛ける・割るで1枚にまとめていくパズルです。最後の1枚を10にできればクリア。見つけた解法は解法図鑑に集まり、その組の解法をすべて見つけると金スタンプがもらえます。10を作れない組を見極める問題やランキングにも対応しています。",
+    "features": [
+      "4つの数と四則演算で、最後の1枚を10にするパズル。",
+      "発見した解法を解法図鑑にコレクション。すべての解法を発見すると金スタンプ。",
+      "3段階のヒントと、10を作れない組の宣言。ランキングにも対応。"
+    ],
+    "beginnerTip": "まずは数字→演算記号→数字の順に選んでみよう。困ったらヒントを使い、1手戻す・リセットで考え直せます。",
+    "howToPlay": [
+      "数字のカードを1枚選び、＋・−・×・÷から演算を選んで、もう1枚の数字を選びます。",
+      "計算結果のカードを使って操作を繰り返し、最後の1枚を10にするとクリアです。",
+      "見つけた解法を図鑑で確認し、別の解き方も探してみましょう。",
+      "10を作れないと思ったら「10は作れません」と宣言できます。困ったらヒントも使えます。"
+    ],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/tenpuzzle/tenpuzzle-play.webp",
+        "original": "assets/screenshots/tenpuzzle/tenpuzzle-play.png",
+        "width": 870,
+        "height": 1536,
+        "caption": "数字と演算を選んで、最後の1枚を10にしよう。"
+      },
+      {
+        "src": "assets/screenshots/tenpuzzle/tenpuzzle-result.webp",
+        "original": "assets/screenshots/tenpuzzle/tenpuzzle-result.png",
+        "width": 870,
+        "height": 1536,
+        "caption": "見つけた解法とクリア結果を確認。"
+      },
+      {
+        "src": "assets/screenshots/tenpuzzle/tenpuzzle-zukan.webp",
+        "original": "assets/screenshots/tenpuzzle/tenpuzzle-zukan.png",
+        "width": 870,
+        "height": 1536,
+        "caption": "発見した解法を図鑑に集めよう。"
+      }
+    ],
+    "featured": true,
+    "featuredOrder": 3
   }
 ]

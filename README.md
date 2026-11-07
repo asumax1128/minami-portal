@@ -122,3 +122,9 @@ FACTOR×FACTORとEV×auctionのみ、同寸法・RGBA完全一致のロスレス
 `data/games.json` を唯一のゲーム情報として、トップと8作品の詳細（計9ページ）を `npm run build` で `dist/` に生成します。直下の手動版index.htmlとCIのコピー処理は廃止しました。開発は `npm run dev`、公開アーティファクトは従来どおり `dist/` です。作品数表示はデータ件数に追従します。
 
 TEN POPの説明は本体リポジトリの遊び方と実装を確認して登録。添付ZIPの正式タイトルPNGと説明・通常プレイ・連鎖画面JPEGを原本のまま保存し、タイトルは画素一致の可逆WebP、ギャラリーは同寸法の品質92 WebPを別途作成しています。既存7作品の登録情報・画像、カテゴリ、ギャラリー、メニュー、基本デザインは変更していません。CIは生成内容を検査し、デプロイ後にcurlでトップ・TEN POP詳細・原本と表示用画像を確認します。
+
+## おすすめ欄とテンパズル
+
+テンパズルを10作品目に登録しました。画像原本は `public/assets/logos/tenpuzzle-logo.jpg` と `public/assets/screenshots/tenpuzzle/*.png`、表示用WebPは同じフォルダーに保存しています。
+
+トップはヒーロー → おすすめ → 更新情報 → 全ゲーム一覧の順です。おすすめは `data/games.json` の `featured: true` の作品を `featuredOrder` の昇順で表示します。追加・解除・並び替えはこのデータを編集して再ビルドしてください。初期表示はFACTOR×FACTOR、数雀、テンパズルです。
