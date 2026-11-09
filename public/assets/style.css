@@ -283,3 +283,6 @@ body:not(.home)>header{height:auto;min-height:108px;flex-wrap:wrap;row-gap:12px;
  .game-card .actions .play{flex:1 1 auto;width:auto;min-height:36px;font-size:11px;padding:7px 8px;justify-content:center}
  .game-card .actions .detail{flex:none;width:auto;min-height:36px;font-size:10px;padding:7px 4px;background:none;border:none;justify-content:center}
 }
+
+/* discovery below grid (2026-11-09): the "今日は、何で勝負する？" panel moved under the games grid */
+.game-discovery{margin:30px 0 4px}
