@@ -272,12 +272,12 @@ body:not(.home)>header{height:auto;min-height:108px;flex-wrap:wrap;row-gap:12px;
 @media(max-width:650px){
  #games{padding-top:34px}
  .game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
- .game-card .logo-stage{aspect-ratio:1.6;padding:10px 12px}
+ .game-card .logo-stage{aspect-ratio:2/1;padding:8px 12px}
  .game-card .card-body{padding:10px 11px 11px}
  .game-card .card-meta{font-size:7px}
  .game-card .card-meta span:last-child{display:none}
  .game-card h3{font-size:14.5px;line-height:1.45;margin:6px 0 4px}
- .game-card .game-catch{font-size:10.5px;line-height:1.6;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+ .game-card .game-catch{font-size:10.5px;line-height:1.6;margin:0;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
  .game-card .game-summary,.game-card .game-tags{display:none}
  .game-card .actions{flex-direction:row;flex-wrap:nowrap;gap:8px;align-items:center;margin-top:10px;padding-top:10px;min-height:0}
  .game-card .actions .play{flex:1 1 auto;width:auto;min-height:36px;font-size:11px;padding:7px 8px;justify-content:center}
