@@ -31,7 +31,7 @@ jobs:
           grep -q 'GAME 10' dist/index.html
           grep -q 'id="featured"' dist/index.html
           grep -q 'GAME 08' dist/index.html
-          grep -q 'TEN GAMES' dist/index.html
+          grep -q 'ELEVEN GAMES' dist/index.html
           grep -q './games/tenpop/' dist/index.html
           grep -q 'https://asumax1128.github.io/tenpop/' dist/index.html
       - uses: actions/configure-pages@v5
@@ -48,12 +48,12 @@ jobs:
           for attempt in 1 2 3 4 5 6; do
             curl -fsSL --retry 2 --max-time 20 -H 'Cache-Control: no-cache' "${url}?verify=${GITHUB_SHA}" -o /tmp/minami-live.html
             if grep -q 'GAME 08' /tmp/minami-live.html &&
-               grep -q 'TEN GAMES' /tmp/minami-live.html &&
+               grep -q 'ELEVEN GAMES' /tmp/minami-live.html &&
                grep -q 'GAME 10' /tmp/minami-live.html &&
                grep -q 'id="featured"' /tmp/minami-live.html &&
                grep -q 'TEN POP' /tmp/minami-live.html &&
                grep -q 'https://asumax1128.github.io/tenpop/' /tmp/minami-live.html; then
-              echo "LIVE OK: GAME 08, TEN GAMES, and TEN POP PLAY URL"
+              echo "LIVE OK: GAME 08, ELEVEN GAMES, and TEN POP PLAY URL"
               wc -c /tmp/minami-live.html
               curl -fsSL --retry 2 --max-time 20 "${url}games/tenpop/?verify=${GITHUB_SHA}" -o /tmp/minami-tenpop.html
               grep -q 'TEN POP' /tmp/minami-tenpop.html
