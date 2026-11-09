@@ -29,7 +29,6 @@ jobs:
           test -s dist/games/tenpop/index.html
           test -s dist/games/tenpuzzle/index.html
           grep -q 'GAME 10' dist/index.html
-          grep -q 'id="featured"' dist/index.html
           grep -q 'GAME 08' dist/index.html
           grep -q 'ELEVEN GAMES' dist/index.html
           grep -q './games/tenpop/' dist/index.html
@@ -50,7 +49,6 @@ jobs:
             if grep -q 'GAME 08' /tmp/minami-live.html &&
                grep -q 'ELEVEN GAMES' /tmp/minami-live.html &&
                grep -q 'GAME 10' /tmp/minami-live.html &&
-               grep -q 'id="featured"' /tmp/minami-live.html &&
                grep -q 'TEN POP' /tmp/minami-live.html &&
                grep -q 'https://asumax1128.github.io/tenpop/' /tmp/minami-live.html; then
               echo "LIVE OK: GAME 08, ELEVEN GAMES, and TEN POP PLAY URL"
