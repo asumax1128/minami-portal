@@ -60,6 +60,69 @@
     "featuredOrder": 1
   },
   {
+    "id": "iroyomi",
+    "title": "いろヨミ！",
+    "accent": "#63C3F6",
+    "symbol": "読",
+    "description": "色と数字を読んで、相手のタイルの並びを当てる推理対戦ゲーム。質問カードで手がかりを集め、決めた場面でアタック。CPU対戦・150問の詰め問題・部屋コードでの対戦に対応。",
+    "genre": "数字推理／読み合い対戦",
+    "image": null,
+    "logo": "assets/logos/iroyomi-logo.png",
+    "logoWebp": "assets/logos/iroyomi-logo.webp",
+    "logoWidth": 1071,
+    "logoHeight": 434,
+    "logoTone": "light",
+    "url": "https://asumax1128.github.io/iroyomi/",
+    "catchphrase": "色と数字を 読む、推理ゲーム",
+    "overview": "白・水色・青、3色の数字タイルの並びを読み合う推理対戦ゲームです。タイルには「色が濃いほど数字が大きく、同じ数字は白→水色→青の順に並ぶ」という約束があり、相手の列は色だけが見えています。自分のターンでは、8枚の質問カードから両者への質問をするか、相手のタイル1枚へアタックするかを選びます。毎ターン山から公開されるタイルも大きな手がかり。質問の答えを積み重ねて並びを絞り込み、相手のタイルをすべて開ければ勝ちです。",
+    "features": [
+      "タイルは白・水色・青の3色。色が濃いほど数字が大きく、同じ数字は色の順に並ぶ——色と順番の約束そのものが、推理の手がかりになります。",
+      "ターンごとに「質問」か「アタック」を選択。質問カードは8枚の共有プール制で、答えは両方のプレイヤーに公開されます。アタックを外すと、自分のタイルが1枚開くペナルティ。",
+      "CPUは性格の違う4人。入門型のミツキ、攻め型のオウスケ、学者型のナツキ、賭け型のアスマと、読み合いを楽しめます。",
+      "「つめヨミ！」は4・5・6枚×50問＝150問の固定問題。すべて検証済みの推理パズルで、1人でも論理を鍛えられます。",
+      "「ふたりヨミ！」では、部屋コードを共有して友達とオンライン対戦もできます（テスト版）。"
+    ],
+    "beginnerTip": "まずは4枚・全部見える・ミツキから始めよう。質問の答えで候補がどう絞られるか、「なぜ？ 候補の理由を見る」で確かめながら遊ぶのがコツ。",
+    "howToPlay": [
+      "モードと相手、タイルの枚数（4・5・6枚）を選んでスタート。じゃんけんで先攻・後攻を決めます。",
+      "自分の列のタイルは数字が見えています。相手の列は色だけが見える状態で始まります。",
+      "自分のターンでは、質問カード（8枚）から全体への質問をするか、相手のタイルへアタックするかを選びます。",
+      "毎ターン、山からタイルが1枚公開されます。質問の答えと公開タイルを手がかりに、相手の並びを絞り込みましょう。",
+      "相手のタイルをすべて開ければ勝ち。アタックを外すと自分のタイルが1枚開いてしまうので、決め手は慎重に。"
+    ],
+    "screenshots": [
+      {
+        "src": "assets/screenshots/iroyomi/iroyomi-title.webp",
+        "original": "assets/screenshots/iroyomi/iroyomi-title.jpeg",
+        "width": 870,
+        "height": 1536,
+        "caption": "タイトル画面。色と数字を 読む、推理ゲーム"
+      },
+      {
+        "src": "assets/screenshots/iroyomi/iroyomi-battle.webp",
+        "original": "assets/screenshots/iroyomi/iroyomi-battle.jpeg",
+        "width": 870,
+        "height": 1536,
+        "caption": "対戦中。あなたの番——質問する？ アタックする？"
+      },
+      {
+        "src": "assets/screenshots/iroyomi/iroyomi-tsume.webp",
+        "original": "assets/screenshots/iroyomi/iroyomi-tsume.jpeg",
+        "width": 870,
+        "height": 1536,
+        "caption": "「つめヨミ！」の問題選択。4・5・6枚×50問"
+      }
+    ],
+    "categories": [
+      "logic",
+      "mind"
+    ],
+    "tags": [
+      "推理",
+      "読み合い"
+    ]
+  },
+  {
     "id": "tenpuzzle",
     "title": "テンパズル",
     "url": "https://asumax1128.github.io/tenpuzzle/",
@@ -541,124 +604,6 @@
     "tags": [
       "論理",
       "心理戦"
-    ]
-  },
-  {
-    "id": "ex-auction",
-    "title": "EV×auction",
-    "accent": "#E2BC6C",
-    "symbol": "↗",
-    "description": "そのくじに、いくら払う？ 確率と賞金から期待値を考え、入札で競い合うオークションゲーム。紙入札とせり上げ式、2つの方式で判断力と駆け引きが試されます。",
-    "genre": "期待値オークション／確率・駆け引き",
-    "image": null,
-    "logo": "assets/logos/ev-auction.png",
-    "url": "https://asumax1128.github.io/evauction/",
-    "overview": "目の前のくじに、いくらまで払えるでしょうか。確率と賞金から期待値を考え、くじを競り落として全6ラウンド後の持ち点を競うゲームです。金額を伏せて出す紙入札と、価格の上昇を見ながら降り時を選ぶせり上げ式を用意。確率や期待値のヒントを買うこともできます。大きな賞金を狙うくじや、点数が減る可能性のあるくじも登場します。計算上の見通しと実際の抽選結果を比べながら、自分なりの入札判断を試してみましょう。",
-    "features": [
-      "金額を伏せて出す紙入札と、降り時を決めるせり上げ式。",
-      "確率や期待値のヒントを持ち点で購入可能。",
-      "CPUとの練習やオンライン参加に対応。ジャックポットやマイナス結果のあるくじも登場。"
-    ],
-    "howToPlay": [
-      "持ち点1000点から始め、全6ラウンド終了時の持ち点を競います。",
-      "紙入札では入札額を同時提出します。通常は高い順におよそ2割が落札し、自分の入札額を支払います。",
-      "せり上げ式では価格の上昇を見て降りるか残るかを判断。通常は残りがおよそ2割になった時点で落札です。",
-      "落札者は共通の抽選結果による賞金を受け取ります。期待値より安く落札しても、1回の抽選で利益が出るとは限りません。"
-    ],
-    "screenshots": [
-      {
-        "src": "assets/screenshots/ev-auction/IMG_0446.webp",
-        "original": "assets/screenshots/ev-auction/IMG_0446.jpg",
-        "width": 1200,
-        "height": 2136,
-        "caption": "確率と期待値を読み、勝負の入札額を決めろ。"
-      },
-      {
-        "src": "assets/screenshots/ev-auction/IMG_0447.webp",
-        "original": "assets/screenshots/ev-auction/IMG_0447.jpg",
-        "width": 1200,
-        "height": 2134,
-        "caption": "ライバルとの競り合い。落札するのは誰だ？"
-      },
-      {
-        "src": "assets/screenshots/ev-auction/IMG_0448.webp",
-        "original": "assets/screenshots/ev-auction/IMG_0448.jpg",
-        "width": 1200,
-        "height": 2316,
-        "caption": "結果を振り返り、次の勝負に生かそう。"
-      }
-    ],
-    "catchphrase": "その価値を見抜け。勝負は入札前から。",
-    "logoWidth": 960,
-    "logoHeight": 480,
-    "logoTone": "dark",
-    "beginnerTip": "CPUとの紙入札で、ヒントの期待値と抽選結果を比べよう。",
-    "logoWebp": "assets/logos/ev-auction.webp",
-    "categories": [
-      "strategy"
-    ],
-    "tags": [
-      "期待値",
-      "戦略"
-    ]
-  },
-  {
-    "id": "read-crowd",
-    "title": "READ×CROWD",
-    "accent": "#A6BFD6",
-    "symbol": "≋",
-    "description": "みんなが選ぶ数字を予測せよ！ 平均値や中央値などの統計的な基準を読み、最適な一手を探る数値予測ゲーム。数字の裏に隠れた群衆の心理を見抜こう。",
-    "genre": "データ分析／数値予測・駆け引き",
-    "image": null,
-    "logo": "assets/logos/read-crowd.png",
-    "url": "https://asumax1128.github.io/crowd-reader/",
-    "overview": "みんなが選ぶ数を予想し、0〜100の整数を提出する駆け引きゲームです。最初に決めた秘密の数字は、全5ラウンドの集計に残り続けます。目指す基準は中央値や平均値の2/3などさまざまで、平均から遠いほど上位になる回も。自分が使った数や、過去に1位を取った数を再び選べないため、前の結果も次の判断につながります。結果のヒストグラムや箱ひげ図を見ながら、予想と実際の分布の違いを楽しんでみましょう。",
-    "features": [
-      "秘密の最初の数字が、全5ラウンドの集計に影響。",
-      "中央値・平均値など、複数の基準と数の再使用制限。",
-      "CPUとの練習とオンライン参加。結果はヒストグラムや箱ひげ図でも確認可能。"
-    ],
-    "howToPlay": [
-      "最初に秘密の数字を1つ決めます。その後、毎ラウンド使用可能な0〜100の整数を同時に提出します。",
-      "全員の最初の数字と今回の提出数を合わせたデータから、その回の基準を計算します。",
-      "中央値に近いほど上位になる回や、平均値から遠いほど上位になる回などがあります。全5ラウンドの合計得点を競いましょう。",
-      "自分の最初の数字、自分の過去の提出数、過去の1位の数は使えません。最頻値を使う回では、複数の最頻値があるときはその平均を使う独自ルールです。"
-    ],
-    "screenshots": [
-      {
-        "src": "assets/screenshots/read-crowd/IMG_0449.webp",
-        "original": "assets/screenshots/read-crowd/IMG_0449.jpg",
-        "width": 1200,
-        "height": 2097,
-        "caption": "群衆の数字を読み、勝負の一手を決めよう。"
-      },
-      {
-        "src": "assets/screenshots/read-crowd/IMG_0450.webp",
-        "original": "assets/screenshots/read-crowd/IMG_0450.jpg",
-        "width": 1200,
-        "height": 1894,
-        "caption": "平均値や分布を読み解き、結果を分析！"
-      },
-      {
-        "src": "assets/screenshots/read-crowd/IMG_0451.webp",
-        "original": "assets/screenshots/read-crowd/IMG_0451.jpg",
-        "width": 1200,
-        "height": 2214,
-        "caption": "30人のライバルを相手に、頂点を目指せ。"
-      }
-    ],
-    "catchphrase": "群衆を読め。その一手が未来を変える。",
-    "logoWidth": 900,
-    "logoHeight": 494,
-    "logoTone": "light",
-    "beginnerTip": "CPUとの練習で、予想と結果のグラフを見比べよう。",
-    "categories": [
-      "mind",
-      "strategy"
-    ],
-    "tags": [
-      "予測",
-      "読み合い"
     ]
   }
 ]
